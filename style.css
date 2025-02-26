@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans&family=Noto+Serif+Devanagari:wght@700&family=Ubuntu:wght@300;400;700&display=swap');
+
+
+h2{
+  font-family: 'Noto Serif Devanagari', serif;
+  color: #3D405B;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 5px 5px 0px 5px;
+  border: 2px solid #3D405B;
+  border-radius: 5px;
+  }
+  
+  .note{
+    font-family: 'Crimson Text', serif;
+    color: #3D405B;
+    margin: 20px 10px -15px 40px;
+    padding: 5px 8px;
+  }
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #F4F1DE;
+}
+.box {
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+.b{
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  margin: 2px;
+  border: 1.5px solid  #3D405B;
+  border-radius: 4px;
+}
+.g {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 4px;
+}
+#m {
+  border: 1.5px solid #00ACF0;
+}
+#f {
+  border: 1.5px solid #EC339C;
+}
+
+/*-------------vertical-tree-view------------*/
+
+.vertical-tree{
+    min-height: 600px;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #3D405B;
+    border-radius: 8px;
+}
+
+.vertical-tree ul{
+    padding-left: 30px;
+    margin-top:0px;
+}
+
+.vertical-tree li {
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 10px 0px 10px;
+    
+}
+.vertical-tree li::before{
+    content: '';
+    position: absolute; 
+    top: 0;
+    width: 1px; 
+    height: 100%;
+    right: auto; 
+    left: -15px;
+    border-left: 2px solid #3D405B;
+    bottom: 50px;
+}
+.vertical-tree li::after{
+    content: '';
+    position: absolute; 
+    top: 34px; 
+    width: 25px; 
+    height: 20px;
+    right: 0px; 
+    left: -15px;
+    border-top: 2px solid #3D405B;
+}
+.vertical-tree li a{
+   
+    display: inline-block;
+    width: 90px;
+    padding: 5px 8px;
+    text-decoration: none;
+    color: #3D405B;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/*--- Generation color ---*/
+#i1, .x1 {
+  background-color:#a8f4f7;
+}
+#i2, .x2 {
+  background-color:#a8caf7;
+}
+#i3, .x3 {
+  background-color:#A8F7B1;
+}
+#i4, .x4 {
+  background-color: #f7a8a8;
+}
+#i5, .x5 {
+  background-color:#F7EFA8;
+}
+#i6, .x6 {
+  background-color:#FFFFFF;
+}
+#i7, .x7 {
+  background-color:#C6D8AF;
+}
+#i8, .x8 {
+  background-color:#FFE0B5;
+}
+
+/*--- Gender color ---*/
+.bro {
+   border: 1.5px solid #00ACF0;
+}
+.sis {
+   border: 1.5px solid #EC339C;
+}
+
+.vertical-tree > ul > li::before, 
+.vertical-tree > ul > li::after{
+    border: 0;
+}
+.vertical-tree li:last-child::before{ 
+        height: 34px;
+}
+.vertical-tree li a:hover, 
+.vertical-tree li a:hover+ul li a {
+    color: black;
+}
+.vertical-tree li a:hover+ul li::after, 
+.vertical-tree li a:hover+ul li::before, 
+.vertical-tree li a:hover+ul::before, 
+.vertical-tree li a:hover+ul ul::before{
+    border-color: black;
+}
+
+
+footer{
+   font-family: 'Crimson Text', serif;
+   font-size: 11px;
+   text-shadow: 0 0 5px #ccc;
+   text-align: center;
+   color: black;
+   margin: 20px 0px 0px 0px;
+}
+
+  /*--- CSS by sagunxgurung ---*/
